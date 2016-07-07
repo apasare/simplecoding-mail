@@ -1,0 +1,28 @@
+{
+    "name": "godvsdeity/simplecoding-mail",
+    "description": "Adds SMTP transport to Magento2",
+    "require": {
+        "magento/module-email": "*",
+        "magento/framework": "*",
+        "magento/zendframework1": "*"
+    },
+    "type": "magento2-module",
+    "version": "0.1.0",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "SimpleCoding\\Mail\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
