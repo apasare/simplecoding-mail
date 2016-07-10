@@ -109,10 +109,6 @@ class Smtp extends \Zend_Mail_Transport_Smtp implements \Magento\Framework\Mail\
             self::XML_PATH_MAIL_SMTP_PASSWORD,
             ScopeInterface::SCOPE_STORE
         );
-        $config['password'] = $this->_scopeConfig->getValue(
-            self::XML_PATH_MAIL_SMTP_PASSWORD,
-            ScopeInterface::SCOPE_STORE
-        );
 
         $ssl = $this->_scopeConfig->getValue(
             self::XML_PATH_MAIL_SMTP_SSL,

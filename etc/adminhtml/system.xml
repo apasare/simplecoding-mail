@@ -1,37 +1,37 @@
 <?xml version="1.0"?>
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
-    <system>
-        <tab id="simplecoding_tab" translate="label" sortOrder="1000">
-            <label>SimpleCoding</label>
-        </tab>
-        <section id="simplecoding_mail" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-            <label>Mail Settings</label>
-            <tab>simplecoding_tab</tab>
-            <resource>SimpleCoding_Mail::config</resource>
-            <group id="smtp" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                <label>SMTP Settings</label>
-                <field id="host" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
-                    <label>Host</label>
-                </field>
-                <field id="port" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
-                    <label>Port</label>
-                </field>
-                <field id="ssl" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Connection Security</label>
-                    <source_model>SimpleCoding\Mail\Model\Config\Source\ConnectionSecurity</source_model>
-                </field>
-                <field id="auth" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Authentication Method</label>
-                    <source_model>SimpleCoding\Mail\Model\Config\Source\AuthMethod</source_model>
-                </field>
-                <field id="username" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Username</label>
-                </field>
-                <field id="password" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Password</label>
-                </field>
-            </group>
-        </section>
-    </system>
+    <system>
+        <tab id="simplecoding_tab" translate="label" sortOrder="1000">
+            <label>SimpleCoding</label>
+        </tab>
+        <section id="simplecoding_mail" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Mail Settings</label>
+            <tab>simplecoding_tab</tab>
+            <resource>SimpleCoding_Mail::config</resource>
+            <group id="smtp" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>SMTP Settings</label>
+                <field id="host" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Host</label>
+                </field>
+                <field id="port" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Port</label>
+                </field>
+                <field id="ssl" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Connection Security</label>
+                    <source_model>SimpleCoding\Mail\Model\Config\Source\ConnectionSecurity</source_model>
+                </field>
+                <field id="auth" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Authentication Method</label>
+                    <source_model>SimpleCoding\Mail\Model\Config\Source\AuthMethod</source_model>
+                </field>
+                <field id="username" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Username</label>
+                </field>
+                <field id="password" translate="label" type="obscure" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Password</label>
+                </field>
+            </group>
+        </section>
+    </system>
 </config>
