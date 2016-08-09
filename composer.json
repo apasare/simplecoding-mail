@@ -1,6 +1,6 @@
 {
     "name": "godvsdeity/simplecoding-mail",
-    "description": "Adds SMTP transport to Magento2",
+    "description": "Adds SMTP transport to Magento2.0.x",
     "require": {
         "magento/module-email": "*",
         "magento/framework": "*",
@@ -18,11 +18,6 @@
         ],
         "psr-4": {
             "SimpleCoding\\Mail\\": ""
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.1-dev"
         }
     }
 }
