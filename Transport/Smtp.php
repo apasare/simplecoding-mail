@@ -77,10 +77,7 @@ class Smtp extends \Zend_Mail_Transport_Smtp implements \Magento\Framework\Mail\
     }
 
     /**
-     * Send a mail using this transport
-     *
-     * @return void
-     * @throws \Magento\Framework\Exception\MailException
+     * {@inheritdoc}
      */
     public function sendMessage()
     {
@@ -88,7 +85,15 @@ class Smtp extends \Zend_Mail_Transport_Smtp implements \Magento\Framework\Mail\
             $this->prepareMessage();
             parent::send($this->_message);
         } catch (\Exception $e) {
-            throw new \Magento\Framework\Exception\MailException(new \Magento\Framework\Phrase($e->getMessage()), $e);
+            throw new \Magento\Framework\Exception\MailException(__($e->getMessage()), $e);
         }
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getMessage()
+    {
+        return $this->_message;
     }
 }
